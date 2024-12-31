@@ -23,7 +23,7 @@ Output: [0,1]
 
 # <================ Algorithm Method -- Brute force ======================>
 class Solution:
-    def twoSum(self, nums: List[int], target: int) -> List[int]:
+    def twoSum(self, nums: list[int], target: int) -> list[int]:
         n = len(nums) # Get the length of input array
         for i in range(n - 1):  # Outer loop: iterate through each element except the last one
             for j in range(i + 1, n):  # Inner loop: check all elements after nums[i]
@@ -32,7 +32,8 @@ class Solution:
         return []
         # If no solution is found, return empty list
         # Time Complexity: O(n^2) where n is the length of nums
-        # Space Complexity: O(1) as we only use two index variables
+        # Space Complexity: O(1) as we only use two index variable
 
-
+result = Solution().twoSum([1, 4, 2, 5], 7)
+print(result)
 
